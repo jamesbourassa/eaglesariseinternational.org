@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Eagles Arise International Ministries</title>
-<meta name="description" content="Eagles Arise International Ministries is a global Christian ministry focused on prayer, evangelism, revival, discipleship, and outreach across seven of the world's largest metropolitan areas and beyond." />
+<meta name="description" content="Eagles Arise International Ministries is a global Christian ministry focused on prayer, evangelism, revival, discipleship, and outreach across the nations." />
 <style>
   :root{
     --bg:#f4f7fb;
@@ -20,7 +20,6 @@
     --radius:18px;
     --max:1180px;
   }
-
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{
@@ -30,112 +29,43 @@
     color:var(--text);
     line-height:1.6;
   }
-
   a{color:var(--blue); text-decoration:none}
   img{max-width:100%; display:block}
-
-  .wrap{
-    width:min(var(--max), calc(100% - 32px));
-    margin:0 auto;
-  }
-
-  .topbar{
-    background:var(--navy);
-    color:#fff;
-    font-size:.95rem;
-  }
-
-  .topbar .wrap{
-    padding:10px 0;
-    display:flex;
-    justify-content:center;
-    text-align:center;
-  }
-
+  .wrap{width:min(var(--max), calc(100% - 32px)); margin:0 auto}
+  .topbar{background:var(--navy); color:#fff; font-size:.95rem}
+  .topbar .wrap{padding:10px 0; text-align:center}
   header{
-    position:sticky;
-    top:0;
-    z-index:50;
+    position:sticky; top:0; z-index:50;
     background:rgba(255,255,255,.96);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--border);
   }
-
   .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-    padding:14px 0;
+    display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 0;
   }
-
-  .brand{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    min-width:0;
-  }
-
+  .brand{display:flex; align-items:center; gap:14px; min-width:0}
   .brand-mark{
-    width:46px;
-    height:46px;
-    border-radius:50%;
-    overflow:hidden;
-    border:2px solid var(--gold);
-    background:#fff;
-    flex:0 0 auto;
+    width:46px; height:46px; border-radius:50%; overflow:hidden;
+    border:2px solid var(--gold); background:#fff; flex:0 0 auto;
   }
-
-  .brand-text{
-    min-width:0;
-  }
-
-  .brand-text strong{
-    display:block;
-    font-size:1.05rem;
-    color:var(--navy);
-  }
-
-  .brand-text span{
-    display:block;
-    font-size:.88rem;
-    color:var(--muted);
-  }
-
+  .brand-text strong{display:block; font-size:1.05rem; color:var(--navy)}
+  .brand-text span{display:block; font-size:.88rem; color:var(--muted)}
   .nav-links{
-    display:flex;
-    flex-wrap:wrap;
-    gap:18px;
-    align-items:center;
-    justify-content:flex-end;
-    font-size:.96rem;
+    display:flex; flex-wrap:wrap; gap:18px; align-items:center; justify-content:flex-end; font-size:.96rem;
   }
-
   .btn{
-    display:inline-block;
-    background:var(--blue);
-    color:#fff;
-    padding:12px 18px;
-    border-radius:999px;
-    font-weight:700;
-    box-shadow:var(--shadow);
+    display:inline-block; background:var(--blue); color:#fff; padding:12px 18px;
+    border-radius:999px; font-weight:700; box-shadow:var(--shadow);
   }
-
-  .btn:hover{opacity:.93}
   .btn.alt{
-    background:#fff;
-    color:var(--navy);
-    border:1px solid var(--border);
-    box-shadow:none;
+    background:#fff; color:var(--navy); border:1px solid var(--border); box-shadow:none;
   }
-
   .hero{
     background:
       linear-gradient(rgba(15,39,71,.72), rgba(15,39,71,.72)),
       url('eagle-ani.webp') center/cover no-repeat;
     color:#fff;
   }
-
   .hero .wrap{
     padding:84px 0 88px;
     display:grid;
@@ -143,7 +73,6 @@
     gap:34px;
     align-items:center;
   }
-
   .eyebrow{
     display:inline-block;
     background:rgba(214,169,75,.18);
@@ -154,27 +83,18 @@
     font-size:.9rem;
     margin-bottom:16px;
   }
-
   .hero h1{
     font-size:clamp(2rem, 5vw, 4rem);
     line-height:1.08;
     margin:0 0 16px;
   }
-
   .hero p{
     font-size:1.08rem;
     max-width:680px;
     color:#e8eef7;
     margin:0 0 24px;
   }
-
-  .hero-actions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:10px;
-  }
-
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px}
   .scripture{
     background:rgba(255,255,255,.09);
     border:1px solid rgba(255,255,255,.18);
@@ -182,329 +102,59 @@
     padding:24px;
     box-shadow:var(--shadow);
   }
-
-  .scripture blockquote{
-    margin:0;
-    font-size:1.2rem;
-    line-height:1.6;
-    font-weight:700;
-  }
-
-  .scripture cite{
-    display:block;
-    margin-top:12px;
-    color:#d7e3f4;
-    font-style:normal;
-  }
-
-  section{
-    padding:68px 0;
-  }
-
-  .section-head{
-    max-width:820px;
-    margin:0 0 28px;
-  }
-
+  .scripture blockquote{margin:0; font-size:1.2rem; line-height:1.6; font-weight:700}
+  .scripture cite{display:block; margin-top:12px; color:#d7e3f4; font-style:normal}
+  section{padding:68px 0}
+  .section-head{max-width:820px; margin:0 0 28px}
   .section-head h2{
-    margin:0 0 10px;
-    color:var(--navy);
-    font-size:clamp(1.8rem, 3vw, 2.6rem);
+    margin:0 0 10px; color:var(--navy); font-size:clamp(1.8rem, 3vw, 2.6rem);
   }
-
-  .section-head p{
-    margin:0;
-    color:var(--muted);
-    font-size:1.02rem;
-  }
-
-  .grid-2{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px;
-  }
-
+  .section-head p{margin:0; color:var(--muted); font-size:1.02rem}
+  .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:28px}
   .card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:var(--radius);
-    box-shadow:var(--shadow);
-    overflow:hidden;
+    background:var(--card); border:1px solid var(--border);
+    border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden;
   }
-
-  .card-pad{
-    padding:24px;
-  }
-
+  .card-pad{padding:24px}
   .feature-list{
-    display:grid;
-    grid-template-columns:repeat(2, minmax(0, 1fr));
-    gap:18px;
-    margin-top:18px;
+    display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; margin-top:18px;
   }
-
   .feature{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:18px;
+    background:#fff; border:1px solid var(--border); border-radius:16px; padding:18px;
   }
-
-  .feature h3{
-    margin:0 0 8px;
-    color:var(--navy);
-    font-size:1.06rem;
-  }
-
-  .feature p{
-    margin:0;
-    color:var(--muted);
-    font-size:.96rem;
-  }
-
-  .cities{
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:28px;
-    align-items:start;
-  }
-
-  .prayer-table{
-    width:100%;
-    border-collapse:collapse;
-    overflow:hidden;
-  }
-
-  .prayer-table th,
-  .prayer-table td{
-    padding:14px 12px;
-    border-bottom:1px solid var(--border);
-    text-align:left;
-    vertical-align:top;
-  }
-
-  .prayer-table th{
-    background:var(--light);
-    color:var(--navy);
-    font-size:.95rem;
-  }
-
-  .prayer-table tr:last-child td{
-    border-bottom:none;
-  }
-
-  .city-note{
-    color:var(--muted);
-    font-size:.96rem;
-    margin-top:14px;
-  }
-
-  .quote-band{
-    background:linear-gradient(135deg, #163963, #0f2747);
-    color:#fff;
-  }
-
-  .quote-band .wrap{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px;
-    align-items:center;
-  }
-
-  .quote-box{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.14);
-    border-radius:22px;
-    padding:28px;
-  }
-
-  .quote-box h2{
-    margin:0 0 12px;
-    font-size:2rem;
-  }
-
-  .quote-box p{
-    color:#dbe7f6;
-    margin:0 0 14px;
-  }
-
-  .image-fill{
-    border-radius:22px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-  }
-
-  .image-fill img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .founder{
-    display:grid;
-    grid-template-columns:.85fr 1.15fr;
-    gap:28px;
-    align-items:start;
-  }
-
-  .founder-photo{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:22px;
-    box-shadow:var(--shadow);
-    overflow:hidden;
-  }
-
-  .founder-photo img{
-    width:100%;
-    height:auto;
-  }
-
-  .founder-photo .caption{
-    padding:16px 18px;
-    font-size:.95rem;
-    color:var(--muted);
-  }
-
-  .story-block{
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:22px;
-    padding:26px;
-    box-shadow:var(--shadow);
-  }
-
-  .story-block p{
-    margin:0 0 16px;
-  }
-
-  .story-block p:last-child{
-    margin-bottom:0;
-  }
-
+  .feature h3{margin:0 0 8px; color:var(--navy); font-size:1.06rem}
+  .feature p{margin:0; color:var(--muted); font-size:.96rem}
   .mission-grid{
-    display:grid;
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-    gap:20px;
+    display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:20px;
   }
-
-  .mission-grid .card h3{
-    margin:0 0 8px;
-    color:var(--navy);
-  }
-
-  .mission-grid .card p{
-    margin:0;
-    color:var(--muted);
-  }
-
-  .giving{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:28px;
-    align-items:start;
-  }
-
-  .giving-list{
-    margin:18px 0 0;
-    padding-left:20px;
-  }
-
-  .giving-list li{
-    margin-bottom:10px;
-  }
-
+  .mission-grid .card h3{margin:0 0 8px; color:var(--navy)}
+  .mission-grid .card p{margin:0; color:var(--muted)}
   .cta-band{
     background:linear-gradient(135deg, #f5efe0, #fff9ec);
     border-top:1px solid #ead9ad;
     border-bottom:1px solid #ead9ad;
   }
-
   .cta-panel{
-    background:#fff;
-    border:1px solid #ead9ad;
-    border-radius:24px;
-    box-shadow:var(--shadow);
-    padding:34px;
-    text-align:center;
+    background:#fff; border:1px solid #ead9ad; border-radius:24px;
+    box-shadow:var(--shadow); padding:34px; text-align:center;
   }
-
-  .cta-panel h2{
-    margin:0 0 12px;
-    color:var(--navy);
-    font-size:2rem;
-  }
-
-  .cta-panel p{
-    max-width:780px;
-    margin:0 auto 18px;
-    color:var(--muted);
-  }
-
-  .footer{
-    background:var(--navy);
-    color:#dce6f5;
-    padding:36px 0 26px;
-  }
-
+  .cta-panel h2{margin:0 0 12px; color:var(--navy); font-size:2rem}
+  .cta-panel p{max-width:780px; margin:0 auto 18px; color:var(--muted)}
+  .footer{background:var(--navy); color:#dce6f5; padding:36px 0 26px}
   .footer-grid{
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-    gap:24px;
-    align-items:start;
+    display:grid; grid-template-columns:1.2fr .8fr; gap:24px; align-items:start;
   }
-
-  .footer h3{
-    color:#fff;
-    margin:0 0 10px;
-  }
-
-  .footer p{
-    margin:0 0 10px;
-  }
-
-  .footer a{
-    color:#ffe7a7;
-  }
-
-  .small{
-    font-size:.92rem;
-    color:#b8c7da;
-  }
-
-  .spacer-top{margin-top:18px}
+  .footer h3{color:#fff; margin:0 0 10px}
+  .footer p{margin:0 0 10px}
+  .footer a{color:#ffe7a7}
+  .small{font-size:.92rem; color:#b8c7da}
   .center{text-align:center}
-
   @media (max-width: 980px){
-    .hero .wrap,
-    .grid-2,
-    .cities,
-    .quote-band .wrap,
-    .founder,
-    .mission-grid,
-    .giving,
-    .footer-grid{
-      grid-template-columns:1fr;
-    }
-
-    .mission-grid{
-      grid-template-columns:1fr;
-    }
-
-    .feature-list{
-      grid-template-columns:1fr;
-    }
-
-    .nav{
-      flex-direction:column;
-      align-items:flex-start;
-    }
-
-    .nav-links{
-      justify-content:flex-start;
-    }
+    .hero .wrap,.grid-2,.mission-grid,.footer-grid{grid-template-columns:1fr}
+    .feature-list{grid-template-columns:1fr}
+    .nav{flex-direction:column; align-items:flex-start}
+    .nav-links{justify-content:flex-start}
   }
-
   @media (max-width: 640px){
     .hero .wrap{padding:64px 0 68px}
     section{padding:52px 0}
@@ -517,7 +167,7 @@
 
 <div class="topbar">
   <div class="wrap">
-    A global Christian ministry focused on prayer, evangelism, discipleship, revival, and outreach.
+    A global Christian ministry focused on prayer, evangelism, revival, discipleship, and outreach.
   </div>
 </div>
 
@@ -525,7 +175,7 @@
   <div class="wrap nav">
     <div class="brand">
       <div class="brand-mark">
-        <img src="eagle-ani.webp" alt="Eagle symbol for Eagles Arise International Ministries">
+        <img src="eagle-ani.webp" alt="Eagles Arise International Ministries eagle symbol">
       </div>
       <div class="brand-text">
         <strong>Eagles Arise International Ministries</strong>
@@ -534,12 +184,11 @@
     </div>
 
     <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#cities">7 Cities</a>
-      <a href="#mission">Mission</a>
-      <a href="#giving">Giving</a>
-      <a href="#founder">Founder</a>
-      <a href="#contact" class="btn alt">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="7-cities.html">7 Cities</a>
+      <a href="giving.html">Giving</a>
+      <a href="mailto:donna.larson@eaglesariseinternational.org" class="btn alt">Contact</a>
     </nav>
   </div>
 </header>
@@ -555,8 +204,8 @@
         witness across the nations.
       </p>
       <div class="hero-actions">
-        <a href="#cities" class="btn">Join the 7 Cities Prayer Focus</a>
-        <a href="#giving" class="btn alt">Partner With Us Today</a>
+        <a href="7-cities.html" class="btn">Join the 7 Cities Prayer Focus</a>
+        <a href="giving.html" class="btn alt">Partner With Us Today</a>
       </div>
     </div>
 
@@ -566,7 +215,7 @@
         in Jerusalem, in all Judea and Samaria, and to the ends of the earth.”
       </blockquote>
       <cite>Acts 1:8</cite>
-      <p class="spacer-top">
+      <p>
         Our heart is to proclaim Christ from Jerusalem to the ends of the earth, while praying
         intentionally for seven of the world’s largest metropolitan areas.
       </p>
@@ -574,7 +223,7 @@
   </div>
 </section>
 
-<section id="about">
+<section>
   <div class="wrap">
     <div class="section-head">
       <h2>A ministry for the nations</h2>
@@ -589,10 +238,10 @@
       <div class="card">
         <img src="earth-web-ani.gif" alt="Global internet and worldwide outreach graphic">
         <div class="card-pad">
-          <h3 style="margin-top:0; color:var(--navy);">Global reach through digital evangelism</h3>
+          <h3 style="margin-top:0; color:#0f2747;">Global reach through digital evangelism</h3>
           <p>
-            The internet has made it possible to reach millions of people effectively across cultures
-            and demographics, without geographical boundaries. We use online platforms to meet people
+            The internet makes it possible to reach millions of people effectively across cultures
+            and demographics without geographical boundaries. We use online platforms to meet people
             in their moment of need with truth, hope, and the Gospel of Jesus Christ.
           </p>
         </div>
@@ -600,7 +249,7 @@
 
       <div class="card">
         <div class="card-pad">
-          <h3 style="margin-top:0; color:var(--navy);">Why this matters now</h3>
+          <h3 style="margin-top:0; color:#0f2747;">Why this matters now</h3>
           <p>
             Millions of people around the world are asking deep questions: Do I matter? Is there a God?
             What is my purpose in life? We believe the answer is found in Jesus Christ, and that this moment
@@ -618,7 +267,7 @@
             </div>
             <div class="feature">
               <h3>Discipleship</h3>
-              <p>Equipping believers to grow in faith, endurance, and Biblical understanding.</p>
+              <p>Equipping believers to grow in faith and Biblical understanding.</p>
             </div>
             <div class="feature">
               <h3>Freedom</h3>
@@ -631,86 +280,7 @@
   </div>
 </section>
 
-<section id="cities">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>The 7 Cities prayer focus</h2>
-      <p>
-        We began this ministry by praying for evangelism and revival in one of the seven target
-        metropolitan areas each day. Three out of every four people now live in a city. These mega-cities
-        represent enormous populations in need of Jesus as Savior and Lord.
-      </p>
-    </div>
-
-    <div class="cities">
-      <div class="card">
-        <img src="7-cities.jpg" alt="World map showing seven major cities for prayer focus">
-        <div class="card-pad">
-          <h3 style="margin-top:0; color:var(--navy);">A weekly rhythm of intercession</h3>
-          <p>
-            Feel free to join us and incorporate intercession for the salvation of the people in these cities
-            into your daily prayers. Pray for the Word of God to go forth, and for the Holy Spirit to move
-            in individual lives to bring about a great end-time harvest.
-          </p>
-          <p class="city-note">
-            We also carry Jerusalem in our hearts in keeping with Acts 1:8, as part of a broader Biblical
-            vision that extends from Jerusalem to the ends of the earth.
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-pad">
-          <table class="prayer-table">
-            <thead>
-              <tr>
-                <th>Day</th>
-                <th>City</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Monday</td><td>Tokyo, Japan</td></tr>
-              <tr><td>Tuesday</td><td>Shanghai, China</td></tr>
-              <tr><td>Wednesday</td><td>Dhaka, Bangladesh</td></tr>
-              <tr><td>Thursday</td><td>Delhi, India</td></tr>
-              <tr><td>Friday</td><td>Sao Paulo, Brazil</td></tr>
-              <tr><td>Saturday</td><td>Mexico City, Mexico</td></tr>
-              <tr><td>Sunday</td><td>New York-Newark, United States</td></tr>
-            </tbody>
-          </table>
-
-          <p class="city-note">
-            There are millions of people in these seven mega-cities who need the Gospel.
-            How wonderful to be part of a ministry that prays, believes, and reaches outward with hope.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="quote-band">
-  <div class="wrap">
-    <div class="quote-box">
-      <h2>Reaching people where they are</h2>
-      <p>
-        What if you could change someone’s life with just one message? That is the heart behind this ministry.
-        We want to meet people in their moment of need and give them hope when they desperately need it most.
-      </p>
-      <p>
-        When Jesus told His disciples to go into all the world and preach the Gospel, they traveled on foot.
-        Today the Church can use websites, social media, mobile devices, and digital publishing to reach people
-        across the globe in ways previous generations never could.
-      </p>
-    </div>
-
-    <div class="image-fill">
-      <img src="start-a-blog.webp" alt="Person typing on a laptop representing digital ministry outreach">
-    </div>
-  </div>
-</section>
-
-<section id="mission">
+<section>
   <div class="wrap">
     <div class="section-head">
       <h2>Our mission in practice</h2>
@@ -723,12 +293,12 @@
 
     <div class="mission-grid">
       <div class="card">
-        <img src="is-there-a-god-ani.gif" alt="Questioning and searching for God">
+        <img src="is-there-a-god-ani.gif" alt="Searching for God and truth">
         <div class="card-pad">
           <h3>Truth for seekers</h3>
           <p>
             Many are searching for answers about God, purpose, eternity, and meaning. We seek to offer
-            fact-based Biblical analysis and Christ-centered teaching with compassion and clarity.
+            Christ-centered teaching with compassion and clarity.
           </p>
         </div>
       </div>
@@ -739,13 +309,13 @@
           <h3>Equipping the saints</h3>
           <p>
             We want believers to remain watchful, grounded in Scripture, and strengthened in prayer,
-            worship, holiness, and endurance in a rapidly changing world.
+            worship, holiness, and endurance.
           </p>
         </div>
       </div>
 
       <div class="card">
-        <img src="indian-christians.webp" alt="Group of believers praying outdoors">
+        <img src="indian-christians.webp" alt="Believers praying outdoors">
         <div class="card-pad">
           <h3>Global prayer and outreach</h3>
           <p>
@@ -758,184 +328,35 @@
   </div>
 </section>
 
-<section id="giving">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Partner with us today</h2>
-      <p>
-        The price of a soul is priceless. Your support helps sustain a ministry of prayer, evangelism,
-        Biblical teaching, digital outreach, and independent Christian witness at a crucial hour.
-      </p>
-    </div>
-
-    <div class="giving">
-      <div class="card">
-        <div class="card-pad">
-          <h3 style="margin-top:0; color:var(--navy);">Why giving matters</h3>
-          <p>
-            Traditional mass evangelism events can be enormously expensive. Digital ministry allows us to
-            reach people worldwide with far fewer barriers. A message placed online can be seen at any hour,
-            in any country, on a relatively inexpensive device.
-          </p>
-          <ul class="giving-list">
-            <li>Support Gospel-centered online outreach</li>
-            <li>Help reach people across cultures and nations</li>
-            <li>Strengthen independent Christian publishing and expression</li>
-            <li>Advance prayer, revival, and discipleship initiatives</li>
-          </ul>
-          <p>
-            “A generous person will prosper; whoever refreshes others will be refreshed.”
-            <strong>Proverbs 11:25</strong>
-          </p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="earth-web-ani.gif" alt="Worldwide digital ministry graphic">
-        <div class="card-pad">
-          <h3 style="margin-top:0; color:var(--navy);">A global ministry opportunity</h3>
-          <p>
-            We are in a moment of immense opportunity. The Gospel can move quickly through digital means,
-            and people around the world are already searching for answers. When you support this work,
-            you help extend Christian truth, hope, and freedom of expression to a world in need.
-          </p>
-          <p>
-            We truly value every contribution. Please give generously as the Lord leads.
-          </p>
-          <p class="spacer-top">
-            <a href="#" class="btn">Donate</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="founder">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>About the founder and mission</h2>
-      <p>
-        This ministry flows from decades of prayer, Scripture study, Christian service, and a long-standing
-        burden for evangelism, deliverance, healing, discipleship, and the truth of the Rapture and the End Times.
-      </p>
-    </div>
-
-    <div class="founder">
-      <div>
-        <div class="founder-photo">
-          <img src="donna-larson_1.jpeg" alt="Portrait of the founder">
-          <div class="caption">
-            A life shaped by prayer, service, teaching, evangelism, and faith in the Lord Jesus Christ.
-          </div>
-        </div>
-
-        <div class="founder-photo" style="margin-top:22px;">
-          <img src="donna-young.jpg" alt="Younger photo of the founder">
-          <div class="caption">
-            Early years of calling, compassion, and ministry.
-          </div>
-        </div>
-      </div>
-
-      <div class="story-block">
-        <p>
-          I have studied the Living Word of God for over 60 years. There are many mysteries hidden within
-          Scripture that are released over time to those who search and ask. I have received End Time visions
-          and dreams since I was seven years old, and over the years they have inspired me to keep the lamp
-          burning in myself and in others.
-        </p>
-
-        <p>
-          By the age of 12, I had already begun ministering to girls at school regarding the sin of abortion.
-          I often brought pregnant girls home with me, and my mother and I would talk with their parents
-          to help restore them to their homes. Some gave their babies up for adoption, and some kept them.
-          I still support pro-life movements today.
-        </p>
-
-        <div class="image-fill" style="margin:20px 0;">
-          <img src="10-b.webp" alt="Founder during earlier years">
-        </div>
-
-        <p>
-          I married and had five beautiful children, each with their own unique gifting, talents, and personalities.
-          During the birth of our second son, I died and was brought back by the prayers of my mother and husband.
-          From that point forward, I understood in a deeper way that every day is precious and chose to live fully
-          in service to the Lord God Almighty.
-        </p>
-
-        <p>
-          Over the years, I served as a Sunday school teacher, youth leader, associate pastor, counselor,
-          deliverer, teacher, preacher, prophet, and apostle. The trials were many, but so were the blessings
-          and the Lord’s protection. I learned that authority is tied to coming under God-given authority.
-          Like others, I have fallen at times, but the Lord has forgiven me, lifted me up, and kept me moving forward.
-        </p>
-
-        <p>
-          I went through a born-again experience at age 26 and received the baptism of the Holy Spirit with
-          the edification of speaking in tongues. I was called into deliverance ministry, a work that often
-          faces spiritual opposition. In that calling, we traveled through eastern and midwestern states and
-          saw many people set free and healed. Yet evangelism has always remained central, because salvation
-          is even more important than healing.
-        </p>
-
-        <p>
-          I was trained under wonderful pastors who taught and mentored me with patience and love. Some are
-          widely known and some are not, but all were precious to me. In turn, I have mentored and taught many
-          for the Kingdom of God and His people.
-        </p>
-
-        <p>
-          God has done many miracles in my life, in my family, and in the lives of many others. Being a leader
-          means being a servant, as Jesus was. My legacy is not material but spiritual. It is the fulfillment
-          of many dreams and visions over more than 40 years, and a continued calling to teach truth and point
-          people toward Jesus Christ.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="cta-band">
   <div class="wrap">
     <div class="cta-panel">
       <h2>Join us in prayer, outreach, and witness</h2>
       <p>
         With dark forces arrayed against truth, this is no time for silence. Christians need courage,
-        clarity, and freedom to express Biblical convictions without fear. We are independent, mission-driven,
-        and committed to proclaiming hope in Jesus Christ to a world in need.
-      </p>
-      <p>
-        There has never been a better opportunity to preach the Gospel than right now.
+        clarity, and freedom to express Biblical convictions without fear.
       </p>
       <div class="hero-actions" style="justify-content:center;">
-        <a href="#cities" class="btn">Pray for the 7 Cities</a>
-        <a href="#giving" class="btn alt">Give Now</a>
+        <a href="7-cities.html" class="btn">Pray for the 7 Cities</a>
+        <a href="giving.html" class="btn alt">Give Now</a>
       </div>
     </div>
   </div>
 </section>
 
-<footer class="footer" id="contact">
+<footer class="footer">
   <div class="wrap footer-grid">
     <div>
       <h3>Eagles Arise International Ministries</h3>
-      <p>
-        A global Christian ministry for prayer, evangelism, revival, discipleship, and outreach.
-      </p>
-      <p class="small">
-        You can later replace this line with your mailing address, contact email, donation link,
-        and any nonprofit statement you want displayed.
-      </p>
+      <p>A global Christian ministry for prayer, evangelism, revival, discipleship, and outreach.</p>
+      <p class="small">Contact: <a href="mailto:donna.larson@eaglesariseinternational.org">donna.larson@eaglesariseinternational.org</a></p>
     </div>
 
     <div>
       <h3>Quick links</h3>
-      <p><a href="#about">About</a></p>
-      <p><a href="#cities">7 Cities</a></p>
-      <p><a href="#mission">Mission</a></p>
-      <p><a href="#giving">Giving</a></p>
-      <p><a href="#founder">Founder</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="7-cities.html">7 Cities</a></p>
+      <p><a href="giving.html">Giving</a></p>
     </div>
   </div>
 

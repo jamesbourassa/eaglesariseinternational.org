@@ -18,12 +18,18 @@
   .wrap{width:min(var(--max), calc(100% - 32px)); margin:0 auto}
   .topbar{background:var(--navy); color:#fff; font-size:.95rem}
   .topbar .wrap{padding:10px 0; text-align:center}
-  header{background:#fff; border-bottom:1px solid var(--border)}
-  .nav{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:14px 0}
-  .brand{display:flex; align-items:center; gap:14px}
-  .brand-mark{width:46px; height:46px; border-radius:50%; overflow:hidden; border:2px solid var(--gold)}
-  .brand-text strong{display:block; color:var(--navy)}
-  .brand-text span{display:block; font-size:.88rem; color:var(--muted)}
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; gap:28px; padding:14px 0}
+  .brand{display:flex; align-items:center; min-width:0}
+  .brand-logo-link{display:inline-flex; align-items:center}
+  .brand-logo{display:block; height:58px; width:auto; max-width:100%}
   .nav-links{display:flex; flex-wrap:wrap; gap:18px; align-items:center}
   .btn{display:inline-block; background:var(--blue); color:#fff; padding:12px 18px; border-radius:999px; font-weight:700}
   .btn.alt{background:#fff; color:var(--navy); border:1px solid var(--border)}
@@ -35,9 +41,6 @@
   .hero h1{margin:0 0 10px; font-size:clamp(2rem, 4vw, 3.4rem)}
   .hero p{margin:0; max-width:800px; color:#dbe7f6}
   section{padding:64px 0}
-  .section-head{max-width:860px; margin:0 0 28px}
-  .section-head h2{margin:0 0 10px; color:var(--navy); font-size:clamp(1.8rem, 3vw, 2.6rem)}
-  .section-head p{margin:0; color:var(--muted)}
   .founder{
     display:grid; grid-template-columns:.85fr 1.15fr; gap:28px; align-items:start;
   }
@@ -63,6 +66,9 @@
     .founder,.footer-grid{grid-template-columns:1fr}
     .nav{flex-direction:column; align-items:flex-start}
   }
+  @media (max-width:640px){
+    .brand-logo{height:46px}
+  }
 </style>
 </head>
 <body>
@@ -74,11 +80,9 @@
 <header>
   <div class="wrap nav">
     <div class="brand">
-      <div class="brand-mark"><img src="eagles-arise-logo.png" alt="Eagles Arise eagle symbol"></div>
-      <div class="brand-text">
-        <strong>Eagles Arise International Ministries</strong>
-        <span>Prayer • Revival • Evangelism • Discipleship</span>
-      </div>
+      <a href="index.html" class="brand-logo-link">
+        <img src="eagles-arise-logo.png" alt="Eagles Arise International Ministries logo" class="brand-logo">
+      </a>
     </div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
